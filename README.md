@@ -50,7 +50,7 @@ python manage.py runserver
 
 После запуска сервера вам будет доступна [документация](http://localhost:8000/redoc/)
 
-## Технологии
+## Stack
 * [Python](https://www.python.org/)
 * [Django](https://www.djangoproject.com/)
 * [Django REST framework](https://www.django-rest-framework.org/)
