@@ -1,4 +1,4 @@
-# API для предыдущего проекта Social network
+# API для проекта [Social network](https://github.com/nisemenov/hw05_final/tree/main)
 полноценное API для проекта Social network
 
 ## Функционал
