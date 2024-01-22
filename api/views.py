@@ -7,6 +7,7 @@ from api.serializers import (PostSerializer,
                              GroupSerializer,
                              FollowSerializer)
 from .permissions import IsOwnerObj
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 
@@ -20,6 +21,11 @@ class PostViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
+
+    @action(detail=False)
+    def count(self, request):
+        count = Post.objects.count()
+        return Response({"count": count})
 
 
 class CommentViewSet(viewsets.ModelViewSet):
